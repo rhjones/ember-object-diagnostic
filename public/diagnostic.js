@@ -46,6 +46,10 @@ let order1 = Order.create({ productName: 'hat', unitPrice: 5, quantity: 2 });
 let order2 = Order.create({ productName: 'desk lamp', unitPrice: 20, quantity: 1 });
 let order3 = Order.create({ productName: 'hand towel', unitPrice: 8, quantity: 3 });
 
-cart.get('addToCart')(order1);
-cart.get('addToCart')(order2);
-cart.get('addToCart')(order3);
+// cart.get('addToCart')(order1);
+// cart.get('addToCart')(order2);
+// cart.get('addToCart')(order3);
+
+cart.addToCart(order1);
+cart.addToCart(order2);
+cart.addToCart(order3);
