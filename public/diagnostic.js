@@ -34,7 +34,7 @@ const Order = Ember.Object.extend({
 
 const Cart = Ember.Object.extend({
   orders: [],
-  addToCart: function(order) {
+  addToCart (order) {
     this.get('orders').pushObject(order);
   },
   orderPrices: Ember.computed.mapBy('orders', 'orderPrice'),
